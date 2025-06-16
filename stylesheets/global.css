@@ -1,8 +1,6 @@
-* {
-  font-family: sans-serif;
-  font-weight: 300;
-  padding: 0;
-  margin: 0;
+:root {
+    font-family: sans-serif;
+    font-weight: 300;
 }
 a { color: black; }
 
@@ -12,57 +10,59 @@ a { color: black; }
 .info-page section { color: black; }
 
 h1 {
-  font-size: 70px;
-  margin-bottom: 10px;
+    font-size: 70px;
+    margin-bottom: 10px;
 }
 
 h2 {
-  font-size: 40px;
-  margin-bottom: 10px;
+    font-size: 40px;
+    margin-bottom: 10px;
 }
 
 h3 {
-  font-size: 30px;
+    font-size: 30px;
 }
 
 p {
-  font-size: 25px;
+    font-size: 25px;
 }
 
 
 
 #header {
-  background-color: white;
-  
-  font-size: 20px;
-  text-align: left;
-  
-  position: fixed;
-  left: 0;
-  right: 0;
-  height: 43px;
-  padding: 0;
-  
-  z-index: 1;
+    background-color: white;
+    
+    font-size: 20px;
+    text-align: left;
+    
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    height: 43px;
+    
+    z-index: 1;
 }
 
 #title {
-  float: left;
-  padding: 10px;
-  margin-left: 10px;
+    float: left;
+    padding: 10px;
+    margin-left: 10px;
 }
 #navigation {
-  float: right;
-  height: 40px;
-  margin: 10px 10px 0px 0px;
+    float: right;
+    height: 40px;
+    margin: 10px 10px 0px 0px;
 }
 #navigation a {
-  color: black;
-  text-decoration: none;
-  padding: 10px;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
 }
 #navigation a:hover {
-  background-color: #EEEEEE;
+    background-color: #EEEEEE;
 }
 
 
@@ -76,64 +76,64 @@ p {
 
 
 .content-section {
-  color: white;
-  padding: 100px 50px 50px 50px;
-  height: 600px;
-  text-align: center;
+    color: white;
+    padding: 100px 50px 50px 50px;
+    height: 600px;
+    text-align: center;
 }
-.content { margin-top: 60px;}
+.content { padding-bottom: 60px;}
 
 .code-sample {
-  font-family: monospace;
-  font-size: 17px;
-  text-align: left;
-  
-  color: #444444;
-  
-  margin: 50px 0 0 -275px;
-  width: 550px;
-  position: relative;
-  left: 50%;
+    font-family: monospace;
+    font-size: 17px;
+    text-align: left;
+    
+    color: #444444;
+    
+    margin: 50px 0 0 -275px;
+    width: 550px;
+    position: relative;
+    left: 50%;
 }
 .code-comment {
-  font-family: inherit;
-  color: #AAAAAA;
+    font-family: inherit;
+    color: #AAAAAA;
 }
 .code-keyword {
-  font-family: inherit;
-  color: #3FA8AF;
+    font-family: inherit;
+    color: #3FA8AF;
 }
 .code-string {
-  font-family: inherit;
-  color: #DD3357;
+    font-family: inherit;
+    color: #DD3357;
 }
 
 .clearer { clear: both; }
 
 .left-column {
-  float: left;
-  width: 50%;
-  text-align: right;
+    float: left;
+    width: 50%;
+    text-align: right;
 }
 .right-column {
-  float: right;
-  width: 50%;
-  text-align: left;
+    float: right;
+    width: 50%;
+    text-align: left;
 }
 
 .blurb {
-  margin-top: 140px;
-  width: 350px;
-  font-size: 18px;
-  line-height: 2em;
+    margin-top: 140px;
+    width: 25vw;
+    font-size: 18px;
+    line-height: 2em;
 }
 .left-column .blurb {
-  margin-right: 20px;
-  float: right;
+    margin-right: 20px;
+    float: right;
 }
 .right-column .blurb {
-  margin-left: 20px;
-  float: left;
+    margin-left: 20px;
+    float: left;
 }
 
 .cartoon { margin: 0 20px 0 20px; }
@@ -153,16 +153,16 @@ p {
 #conversational .cartoon { margin-top: 75px; }
 
 fieldset {
-  border: none;
+    border: none;
 }
 input {
-  font-size: 20px;
-  padding: 10px;
-  margin-top: 10px;
-  text-align: right;
-  border-radius: 5px;
-  border: none;
-  outline: none;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: right;
+    border-radius: 5px;
+    border: none;
+    outline: none;
 }
 
 .email-field { width: 250px; }
@@ -178,85 +178,104 @@ input {
 
 .info-page { background-color: #F8F8F8; }
 .info-page .content-section p {
-  width: 700px;
-  position: relative;
-  left: 50%;
-  margin: 20px 0px 0px -350px;
-  line-height: 1.25em;
+    width: var(--content-width);
+    position: relative;
+    left: 50%;
+    margin: 20px 0px 0px var(--content-offset);
+    line-height: 1.25em;
 }
 .info-page .content p {
-  text-align: left;
-  font-size: 20px;
-  font-weight: 300;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 300;
 }
 .question { margin-bottom: 60px; }
 .bio { margin-bottom: 60px; }
 .bio img {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 
 
 #blog .post-preview { margin-bottom: 60px; }
 #blog .content {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 #blog.content-section p, #blog.content-section blockquote {
-  width: 700px;
-  position: relative;
-  left: 50%;
-  margin: 20px 0px 0px -350px;
-  line-height: 1.25em;
-  font-size: 16px;
+    width: var(--content-width);
+    position: relative;
+    left: 50%;
+    margin: 20px 0px 0px var(--content-offset);
+    line-height: 1.25em;
+    font-size: 16px;
 }
 #blog.content-section p.quote {
-  padding-left: 10px;
+    padding-left: 10px;
 }
 #blog span.code { font-family: monospace; }
 #blog p.code {
-  font-family: monospace;
-  font-size: 16px;
-  background-color: #eee;
-  padding: 4px 4px 4px 6px;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  border-left: 6px solid #ccc;
+    font-family: monospace;
+    font-size: 16px;
+    background-color: #eee;
+    padding: 4px 4px 4px 6px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-left: 6px solid #ccc;
 }
 #blog pre {
-  width: 700px;
-  position: relative;
-  left: 50%;
-  margin-left: -350px;
-  background-color: #eee;
-  padding: 4px 4px 4px 6px;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  border-left: 6px solid #ccc;
-  text-align: left;
+    width: var(--content-width);
+    position: relative;
+    left: 50%;
+    margin-left: var(--content-offset);
+    background-color: #eee;
+    padding: 4px 4px 4px 6px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-left: 6px solid #ccc;
+    text-align: left;
 }
 #blog code {
-  font-family: monospace;
-  font-size: 16px;
+    font-family: monospace;
+    font-size: 16px;
 }
 
 #blog h3 { margin-top: 40px; }
 /*
-     FILE ARCHIVED ON 20:25:51 Nov 26, 2018 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 16:18:15 Jun 16, 2025.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+FILE ARCHIVED ON 20:25:51 Nov 26, 2018 AND RETRIEVED FROM THE
+INTERNET ARCHIVE ON 16:18:15 Jun 16, 2025.
+JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
 
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
+ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+SECTION 108(a)(3)).
 */
 /*
 playback timings (ms):
-  captures_list: 0.676
-  exclusion.robots: 0.03
-  exclusion.robots.policy: 0.018
-  esindex: 0.012
-  cdx.remote: 69.373
-  LoadShardBlock: 111.384 (3)
-  PetaboxLoader3.datanode: 95.561 (5)
-  PetaboxLoader3.resolve: 160.211 (3)
-  load_resource: 174.788 (2)
+captures_list: 0.676
+exclusion.robots: 0.03
+exclusion.robots.policy: 0.018
+esindex: 0.012
+cdx.remote: 69.373
+LoadShardBlock: 111.384 (3)
+PetaboxLoader3.datanode: 95.561 (5)
+PetaboxLoader3.resolve: 160.211 (3)
+load_resource: 174.788 (2)
 */
+
+:root {
+    --content-width: calc( min(850px, 50vw) );
+    --content-offset: calc( var(--content-width)*-0.5 );
+}
+
+
+li {
+    text-align: left;
+}
+
+.content > ol, .content > ul {
+    width: var(--content-width);
+    position: relative;
+    left: 50%;
+    margin: 20px 0px 0px var(--content-offset);
+    line-height: 1.25em;
+    font-size: 16px;
+}
