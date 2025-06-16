@@ -20,11 +20,11 @@ function judgment_type(a) {
       
   } else if ("*" == a.tag) {
       
-      return judgment_type(a.left) &amp;&amp; judgment_type(a.right);
+      return judgment_type(a.left) && judgment_type(a.right);
       
   } else if ("->" == a.tag) {
       
-      return judgment_type(a.arg) &amp;&amp; judgment_type(a.ret);
+      return judgment_type(a.arg) && judgment_type(a.ret);
       
   } else {
       
