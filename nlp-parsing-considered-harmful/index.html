@@ -7,12 +7,12 @@
     </head>
     <body class="info-page">
         <section id="header">
-            <a href="/"><span id="title">languag<span class="logo-e">e</span>ngine</span></a>
+            <a href="/index.html"><span id="title">languag<span class="logo-e">e</span>ngine</span></a>
             <nav id="navigation">
-                <a href="/">Home</a>
-                <a href="/blog">Blog</a>
-                <a href="/learn-more">Learn More</a>
-                <a href="/about-us">About Us</a>
+                <a href="/index.html">Home</a>
+                <a href="/index.html">Blog</a>
+                <a href="/learn-more/index.html">Learn More</a>
+                <a href="/about-us/index.html">About Us</a>
             </nav>
         </section>
         
@@ -109,7 +109,7 @@
                 
                 <p>But when the input is malformed, the parser should provide as much information as possible. In particular, it should provide information about the various partial parses that are possible on the input string. This makes it idea to use a chart parser or similar non-deterministic bottom-up technique.</p>
                 
-                <p>We can also add some additional mechanisms to try to do error repair, at least to generate candidates. For example, in <a href="languagengine.co/blog/regex-edit-distance/">my post on regex edit distance</a>, I mentioned that the technique can be relatively easily extended to produce diffs instead of just edits. We could use such a system to try to repair the partial parses from the chart parser.</p>
+                <p>We can also add some additional mechanisms to try to do error repair, at least to generate candidates. For example, in <a href="languagengine.co/regex-edit-distance/">my post on regex edit distance</a>, I mentioned that the technique can be relatively easily extended to produce diffs instead of just edits. We could use such a system to try to repair the partial parses from the chart parser.</p>
                 
                 <p>These are just some suggestions for one possible route to take. I'm curious if there are others. I'm sure there's a whole variety of options for handling parse failure for future natural language understanding and AI purposes that don't involve throwing everything into the statistics and hoping that parse errors won't be an issue.</p>
                 

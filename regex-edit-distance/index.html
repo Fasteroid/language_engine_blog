@@ -7,12 +7,12 @@
     </head>
     <body class="info-page">
         <section id="header">
-            <a href="/"><span id="title">languag<span class="logo-e">e</span>ngine</span></a>
+            <a href="/index.html"><span id="title">languag<span class="logo-e">e</span>ngine</span></a>
             <nav id="navigation">
-                <a href="/">Home</a>
-                <a href="/blog">Blog</a>
-                <a href="/learn-more">Learn More</a>
-                <a href="/about-us">About Us</a>
+                <a href="/index.html">Home</a>
+                <a href="/index.html">Blog</a>
+                <a href="/learn-more/index.html">Learn More</a>
+                <a href="/about-us/index.html">About Us</a>
             </nav>
         </section>
         
@@ -150,7 +150,7 @@
                 
                 <p>Having demonstrated the technique of using state machines for string edit distances, we can now consider regex edit distances. Observe that regular expresses correspond to state machines as well. We ought to expect, then, that we can construct a coupled machine for a string-regex pair, as we did for string-string pairs. In fact, strings are special cases of regular expressions, so the previous section is just a special case of this one.</p>
                 
-                <p>To illustrate this, consider the regular expression <span class="code">a(b|d)c</span>, which will match the string <span class="code">abc</span>. If we take the product of their state spaces (using the regular expression state space described in <a href="/blog/differentiating-regular-expressions/">my previous blog post</a>), then we get the following:</p>
+                <p>To illustrate this, consider the regular expression <span class="code">a(b|d)c</span>, which will match the string <span class="code">abc</span>. If we take the product of their state spaces (using the regular expression state space described in <a href="/differentiating-regular-expressions/index.html">my previous blog post</a>), then we get the following:</p>
                 
                 <p><img src="state-machine-abc-times-abordc.svg" /></p>
                 
@@ -183,7 +183,7 @@
                 
                 <p>To generalize, then, we simply want to calculate everything using the regular expression's state machine in place of one of the strings. However, in order to do this, we must be able to determine a lower bound on the remaining cost, as we did with strings. Of course, for strings this was easy, because the remainder of the string was precisely the number of transitions needed, but for regular expressions, this isn't the case. So how can we do this?</p>
                 
-                <p>One option is to inspect the regular expression's finite state machine, and see what all of the paths are that lead from its current state to the end state, and determine from this the lowest number of (non-empty) symbols that it has to transition over. Using the derivative-based representation of regular expression states from <a href="/blog/differentiating-regular-expressions/">my previous post</a>, this turns out to be a simple problem. In fact, it's very similar to the function <span class="code">finishesTrivially</span>.</p>
+                <p>One option is to inspect the regular expression's finite state machine, and see what all of the paths are that lead from its current state to the end state, and determine from this the lowest number of (non-empty) symbols that it has to transition over. Using the derivative-based representation of regular expression states from <a href="/differentiating-regular-expressions/index.html">my previous post</a>, this turns out to be a simple problem. In fact, it's very similar to the function <span class="code">finishesTrivially</span>.</p>
                 
                 
                 

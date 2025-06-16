@@ -10,12 +10,12 @@
     </head>
     <body class="info-page">
         <section id="header">
-            <a href="/"><span id="title">languag<span class="logo-e">e</span>ngine</span></a>
+            <a href="/index.html"><span id="title">languag<span class="logo-e">e</span>ngine</span></a>
             <nav id="navigation">
-                <a href="/">Home</a>
-                <a href="/blog">Blog</a>
-                <a href="/learn-more">Learn More</a>
-                <a href="/about-us">About Us</a>
+                <a href="/index.html">Home</a>
+                <a href="/index.html">Blog</a>
+                <a href="/learn-more/index.html">Learn More</a>
+                <a href="/about-us/index.html">About Us</a>
             </nav>
         </section>
         
@@ -24,7 +24,7 @@
             <div class="content">
                 <p><em>posted by Beka on 5 Mar 2016</em></p>
                 
-                <p>In <a href="languagengine.co/blog/symbolic-machine-learning">a previous blog post</a>, I proposed a technique for representing symbolic data as numerical vectors which could be used for machine learning purposes. There was one major drawback to the approach, however: because the indices of the vectors were the different graphs up to some bounding size, the number of indices could be extraordinarily large. For an undirected, unlabeled graph with 5 nodes, there's 2<sup>15</sup> = 32,768 distinct graphs. Adding in labels increases this substantially, and even with the imposition of directed acyclic structure, the numbers are still quite large. This blog post aims to address this problem and provide and alternative way to think about symbolic vectors.</p>
+                <p>In <a href="languagengine.co/symbolic-machine-learning">a previous blog post</a>, I proposed a technique for representing symbolic data as numerical vectors which could be used for machine learning purposes. There was one major drawback to the approach, however: because the indices of the vectors were the different graphs up to some bounding size, the number of indices could be extraordinarily large. For an undirected, unlabeled graph with 5 nodes, there's 2<sup>15</sup> = 32,768 distinct graphs. Adding in labels increases this substantially, and even with the imposition of directed acyclic structure, the numbers are still quite large. This blog post aims to address this problem and provide and alternative way to think about symbolic vectors.</p>
                 
                 <h3>Eliminating Indices</h3>
                 
