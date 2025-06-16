@@ -43,7 +43,7 @@ Proposal 2:
                 
                 <h3>Rules for Pair Subtyping</h3>
                 
-                <p>To pin down subtypes, I'm going to use a type theoretic presentation of a number of common types from the Simply Typed Lambda Calculus, namely pairs types, function types, and sum/disjoint union types. Hopefully this won't be too out of people's comfort zones. If it is, I suggest checking out <a href="http://languagengine.co/blog/so-you-want-to-write-a-type-checker/">my blog post on building a type checking in JS</a> or looking at some of the things on my <a href="http://purelytheoretical.com/sywtltt.html">my suggested reading/watching</a>.</p>
+                <p>To pin down subtypes, I'm going to use a type theoretic presentation of a number of common types from the Simply Typed Lambda Calculus, namely pairs types, function types, and sum/disjoint union types. Hopefully this won't be too out of people's comfort zones. If it is, I suggest checking out <a href="/blog/so-you-want-to-write-a-type-checker/">my blog post on building a type checking in JS</a> or looking at some of the things on my <a href="http://purelytheoretical.com/sywtltt.html">my suggested reading/watching</a>.</p>
                 
                 <p>Let's consider pairs first. If you've got a pair <code>p : Integer * Oak</code>, we expect that we should be able to use it wherever we need a pair of type <code>Real * Tree</code>, because, after all, <code>Integer</code>s are <code>Real</code>s, and <code>Oak</code>s are <code>Tree</code>s, right? Pairing them up doesn't change that. The key words here are <em>use</em> and <em>need</em>. We should be able to <em>use</em> the one wherever we <em>need</em> the other.</p>
                 
